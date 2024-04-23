@@ -1,0 +1,22 @@
+steps:
+  - label: Upload
+    key: test
+    artifact_paths:
+      - "report.junit"
+
+  - label: ":buildkite: Annotate"
+    depends_on: "test"
+    allow_dependency_failure: true
+    plugins:
+      - junit-annotate#v1.2.0:
+          artifacts: report.junit
+    # plugins:
+    #   - bugcrowd/test-summary#v1.11.0:
+    #       inputs:
+    #         - label: Xcode
+    #           artifact_path: fastlane/test_output/*.junit
+    #           type: junit
+    #       formatter:
+    #         type: details
+    #       context: test-summary
+

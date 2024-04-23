@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1">
+    <testsuite name="storyViewTests" tests="1" failures="1" skipped="0" time="3.102492094039917">
+        <properties>
+          <property name="Configuration" value="Test Scheme Action"/>
+        </properties>
+        <testcase classname="StoryViewTests" name="testData()" time="3.102492094039917">
+            <failure message="XCTAssertEqual failed: (&quot;8&quot;) is not equal to (&quot;4&quot;) (/Users/daniel/bkprojects/example-ios-app/storyView/StoryViewTests/StoryViewTests.swift#EndingLineNumber=23&amp;StartingLineNumber=23)">
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

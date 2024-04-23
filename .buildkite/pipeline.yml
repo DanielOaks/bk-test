@@ -1,5 +1,6 @@
 steps:
-  - label: Upload
+  - command: "echo 'Testing complete'"
+    label: Upload
     key: test
     artifact_paths:
       - "report.junit"
